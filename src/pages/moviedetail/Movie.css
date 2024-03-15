@@ -28,7 +28,6 @@
 }
 
 .project-content {
-  padding: 0 118px;
   position: relative;
 }
 
@@ -37,7 +36,6 @@
   -webkit-align-items: initial;
   align-items: initial;
   margin: 0 -35px;
-  padding-bottom: 100px;
 }
 
 .project-content .block-container .block-item {
@@ -73,6 +71,17 @@
 .project-content .block-container .block-item:last-of-type .content-section a:hover {
   color: #cc3142;
   transition: 300ms;
+}
+
+.project-content .block-container .block-item:last-of-type .content-section .corp_logo {
+  width: 100px;
+  height: auto;
+}
+
+.project-content .block-container:not(:last-of-type) {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /*# sourceMappingURL=Movie.css.map */

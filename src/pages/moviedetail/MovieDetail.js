@@ -73,6 +73,7 @@ const Movie = () => {
           <div className="overlay">
           </div>
         </div>
+        <div className="cstm__container">
         <div class="project-content">
           <div class="block-container">
             <div class="block-item">
@@ -174,7 +175,7 @@ const Movie = () => {
                     company.logo_path
                     &&
                     <span className="">
-                      <img className="" src={"https://image.tmdb.org/t/p/original" + company.logo_path} />
+                      <img className="corp_logo" src={"https://image.tmdb.org/t/p/original" + company.logo_path} />
                       <span>{company.name}</span>
                     </span>
                   }
@@ -184,6 +185,7 @@ const Movie = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
       </>
