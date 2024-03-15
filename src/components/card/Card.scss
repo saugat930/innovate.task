@@ -75,3 +75,39 @@
     }
   }
 }
+
+@media all and (max-width: 1300px) {
+  .movie__container {
+    margin: -10px;
+  }
+  .movie__list__card {
+    width: 33.33%;
+    padding: 10px;
+    color: #fff;
+    .card__container {
+      border-radius: 10px;
+    }
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .movie__container {
+    margin: -10px;
+  }
+  .movie__list__card {
+    width: 50%;
+    padding: 10px;
+    color: #fff;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .movie__container {
+    margin: -10px;
+  }
+  .movie__list__card {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+  }
+}

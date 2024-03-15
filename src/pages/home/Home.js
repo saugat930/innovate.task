@@ -147,68 +147,61 @@ const Home = () => {
         hideSorting={hideSorting}
       />
       <div className="">
+        <div className="cstm__container">
+          <div className="flex__wrapper">
+          {searchResults.length
+            ? searchResults.map((movie) => (
+
+              <div className="movie__list__card" key={movie.id}>
+            <div className="card__container">
+            <Link to={`/movie/${movie.id}`}>
+            <div className="image__container">
+            <img src={`https://image.tmdb.org/t/p/original${movie && movie.poster_path}`} />
+              </div>
+
+              <div className="text__container">
+              <div>
+              <h1><Link to={`/movie/${movie.id}`}>{movie ? movie.original_title : ""}</Link></h1>
+              </div>
+              <div className="ratings">
+              <li>
+              <span class="material-icons">
+              star
+              </span>
+              {movie ? movie.vote_average : ""}
+              </li>
+              <li>
+              <span class="material-icons">
+              person
+              </span>
+              {movie ? movie.vote_count : ""}
+              </li>
+              </div>
+              <div>
+              {movie ? movie.overview : ""}
+              </div>
+              </div>
+              </Link>
+              </div>
+              </div>
+
+            ))
+            : popularMovies.map((movie) => (
+
+              <div className="movie__card" key={movie.id}>
+              </div>
+
+            ))}
+            </div>
+          </div>
         <Slider
           fade={true}
           autoplay={true}
           autoplaySpeed={3000}
           pauseOnHover={true}
         >
-        {searchResults.length
-          ? searchResults.map((movie) => (
-            <div className="movie__card" key={movie.id}>
-              <div className="card__container" style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${movie && movie.backdrop_path})`}}>
-                <div className="cstm__container">
-                  <div className="flex__box">
-                    <div className="flex__item">
-                      <Link to={`/movie/${movie.id}`}>
-                        <div className="image__container">
-                          <img
-                          src={`https://image.tmdb.org/t/p/original${
-                            movie && movie.poster_path
-                          }`}
-                          />
-                        </div>
-                      </Link>
-                    </div>
-                    <div className="flex__item">
-                      <div className="text__container">
-                        <div>
-                          Release: {movie ? movie.release_date : ""}
-                        </div>
-                        <div>
-                          <h1><Link to={`/movie/${movie.id}`}>{movie ? movie.original_title : ""}</Link></h1>
-                        </div>
-                        <div className="ratings">
-                          <li>
-                            <span class="material-icons">
-                            star
-                            </span>
-                            {movie ? movie.vote_average : ""}
-                          </li>
-                          <li>
-                            <span class="material-icons">
-                            person
-                            </span>
-                            {movie ? movie.vote_count : ""}
-                          </li>
-                        </div>
-                        <div>
-                          {movie ? movie.overview : ""}
-                        </div>
-                        <div className="co_btn">
-                          <Link to={`/movie/${movie.id}`}>View Details</Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="overlay">
-                </div>
-              </div>
-            </div>
-            ))
-          : popularMovies.map((movie) => (
-
+        {
+            popularMovies.map(movie => (
               <div className="movie__card" key={movie.id}>
                 <div className="card__container" style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${movie && movie.backdrop_path})`}}>
                   <div className="cstm__container">
@@ -260,8 +253,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
-            ))}
+            ))
+        }
         </Slider>
       </div>
     </>

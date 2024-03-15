@@ -26,6 +26,7 @@ code {
 
 .cstm__container#listed {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .cstm__container#listed .back__btn {
@@ -34,6 +35,18 @@ code {
 
 .cstm__container#listed h2 {
   margin-bottom: 30px;
+}
+
+@media all and (max-width: 1300px) {
+  .cstm__container {
+    padding: 0 80px;
+  }
+}
+
+@media all and (max-width: 999px) {
+  .cstm__container {
+    padding: 0 30px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

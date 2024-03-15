@@ -3,9 +3,10 @@
   top: 0;
   left: 0;
   z-index: 5;
-  margin-bottom: -108px;
+  margin-bottom: -140px;
   .cstm__container {
     padding-top: 30px;
+    padding-bottom: 30px;
     .nav__wrapper {
       background: rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(10px);
@@ -33,6 +34,33 @@
         }
       }
       .search {
+      }
+    }
+  }
+}
+
+@media all and (max-width: 999px) {
+  .header {
+    margin-bottom: -140px;
+    .cstm__container {
+      .nav__wrapper {
+        padding: 20px 30px;
+        overflow: scroll;
+        .nav {
+          display: flex;
+          margin-right: 30px;
+          a {
+            white-space: nowrap;
+            &:not(:last-of-type) {
+              margin-right: 30px;
+            }
+            &:first-child {
+              display: none;
+            }
+          }
+        }
+        .search {
+        }
       }
     }
   }

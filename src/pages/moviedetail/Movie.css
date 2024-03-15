@@ -6,6 +6,10 @@
   padding-top: 100px;
 }
 
+.back__btn {
+  margin-bottom: 30px;
+}
+
 .back__btn a {
   color: white;
   transition: 300ms;

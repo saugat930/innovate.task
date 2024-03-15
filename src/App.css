@@ -3,11 +3,12 @@
   top: 0;
   left: 0;
   z-index: 5;
-  margin-bottom: -108px;
+  margin-bottom: -140px;
 }
 
 .header .cstm__container {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header .cstm__container .nav__wrapper {
@@ -37,6 +38,29 @@
 
 .header .cstm__container .nav__wrapper .nav a:not(:last-of-type) {
   margin-right: 30px;
+}
+
+@media all and (max-width: 999px) {
+  .header {
+    margin-bottom: -140px;
+  }
+  .header .cstm__container .nav__wrapper {
+    padding: 20px 30px;
+    overflow: scroll;
+  }
+  .header .cstm__container .nav__wrapper .nav {
+    display: flex;
+    margin-right: 30px;
+  }
+  .header .cstm__container .nav__wrapper .nav a {
+    white-space: nowrap;
+  }
+  .header .cstm__container .nav__wrapper .nav a:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  .header .cstm__container .nav__wrapper .nav a:first-child {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

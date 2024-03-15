@@ -1,4 +1,8 @@
-
+.flex__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 140px;
+}
 .movie__card {
   color: #fff;
   padding: 0 !important;
@@ -9,11 +13,18 @@
     border-radius: 0 !important;
     position: relative;
     .cstm__container {
-      padding-top: 208px;
+      padding-top: 100px;
       padding-bottom: 100px;
       min-height: 600px;
       position: relative;
       z-index: 3;
+    }
+    .title {
+      h1 {
+        font-weight: 300;
+        margin-bottom: 30px;
+
+      }
     }
     .flex__box {
       display: flex;
@@ -139,5 +150,91 @@
       color: rgba(277,277,277,.9);
       transition: 300ms;
     }
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .movie__card {
+    .card__container {
+      .flex__box {
+        .flex__item {
+          border-radius: 10px;
+          .text__container {
+            h1 {
+              font-size: 28px;
+            }
+          }
+          &:first-child {
+            width: 350px;
+          }
+          &:last-child {
+            width: calc(100% - 350px);
+            padding: 50px;
+            border-radius: 0 10px 10px 0 ;
+          }
+        }
+      }
+    }
+  }
+  .slick-next {
+    right: 40px;
+  }
+  .slick-prev {
+    left: 40px;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .movie__card {
+    .card__container {
+      .flex__box {
+        .flex__item {
+          &:first-child {
+            width: 350px;
+          }
+          &:last-child {
+            width: calc(100% - 350px);
+            padding: 40px 30px;
+            border-radius: 0 10px 10px 0 ;
+          }
+        }
+      }
+    }
+  }
+  .slick-next {
+    right: 40px;
+  }
+  .slick-prev {
+    left: 40px;
+  }
+}
+
+@media all and (max-width: 999px) {
+  .movie__card {
+    .card__container {
+      .flex__box {
+        flex-wrap: wrap;
+        box-shadow: 5px 5px 30px #000;
+        .flex__item {
+          &:first-child {
+            width: 100%;
+            box-shadow: none;
+            border-radius: 10px 10px 0 0;
+          }
+          &:last-child {
+            width: 100%;
+            padding: 30px;
+            border-radius: 0 0 10px 10px ;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  .slick-next {
+    right: 40px;
+  }
+  .slick-prev {
+    left: 40px;
   }
 }
