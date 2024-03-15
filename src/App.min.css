@@ -1,0 +1,3 @@
+.header{position:sticky;top:0;left:0;z-index:5;margin-bottom:-108px}.header .cstm__container{padding-top:30px}.header .cstm__container .nav__wrapper{background:rgba(255,255,255,0.5);backdrop-filter:blur(10px);border-radius:60px;display:flex;align-items:center;justify-content:space-between;padding:20px 50px}.header .cstm__container .nav__wrapper .nav a{text-decoration:none;color:#0c1e2f;transition:300ms;letter-spacing:1.5px;line-height:1;font-weight:500;font-variant:small-caps}.header .cstm__container .nav__wrapper .nav a:hover{transition:300ms;color:#000}.header .cstm__container .nav__wrapper .nav a:not(:last-of-type){margin-right:30px}
+
+/*# sourceMappingURL=App.min.css.map */

@@ -1,0 +1,78 @@
+.movie__card {
+  width: 100%;
+}
+
+.movie__card .card__container .cstm__container#single {
+  padding-top: 100px;
+}
+
+.back__btn a {
+  color: white;
+  transition: 300ms;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  width: max-content;
+  font-size: 20px;
+}
+
+.back__btn a span {
+  margin-right: 10px;
+}
+
+.back__btn a:hover {
+  color: white;
+  transition: 300ms;
+}
+
+.project-content {
+  padding: 0 118px;
+  position: relative;
+}
+
+.project-content .block-container {
+  display: flex;
+  -webkit-align-items: initial;
+  align-items: initial;
+  margin: 0 -35px;
+  padding-bottom: 100px;
+}
+
+.project-content .block-container .block-item {
+  position: relative;
+  padding: 0 35px;
+}
+
+.project-content .block-container .block-item:first-of-type {
+  width: 30%;
+}
+
+.project-content .block-container .block-item:first-of-type .title-section {
+  font-variant: small-caps;
+}
+
+.project-content .block-container .block-item:first-of-type .title-section h2 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 400;
+  color: #cc3142;
+}
+
+.project-content .block-container .block-item:last-of-type {
+  width: 70%;
+}
+
+.project-content .block-container .block-item:last-of-type .content-section a {
+  color: #fff;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+.project-content .block-container .block-item:last-of-type .content-section a:hover {
+  color: #cc3142;
+  transition: 300ms;
+}
+
+/*# sourceMappingURL=Movie.css.map */
