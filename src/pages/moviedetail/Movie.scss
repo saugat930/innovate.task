@@ -30,20 +30,38 @@
   }
 }
 
+#detail_page_container {
+  background-color: #0c1e2f;
+  background: url('https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405223/starwars/item-4-bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  h1 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 400;
+    font-variant: small-caps;
+  }
+}
 .project-content {
   position: relative;
+  background: #0a1a29;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 1px 1px 5px #050d14;
   .block-container {
     display: flex;
     -webkit-align-items: initial;
     align-items: initial;
-    margin: 0 -35px;
     .block-item {
       position: relative;
       padding: 0 35px;
       &:first-of-type {
         width: 30%;
         .title-section {
-          font-variant: small-caps;
           h2 {
             margin: 0;
             font-size: 23px;
@@ -64,9 +82,26 @@
               transition: 300ms;
             }
           }
-          .corp_logo {
-            width: 100px;
-            height: auto;
+        }
+        .movie__genre {
+          list-style: none;
+          &:not(:last-of-type) {
+
+          }
+        }
+        .corp__container {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          .image__container {
+            .corp_logo {
+              width: 100px;
+              height: auto;
+              filter: brightness(0) invert(1);
+            }
+            &:not(:last-of-type) {
+              margin-right: 30px;
+            }
           }
         }
       }

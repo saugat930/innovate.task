@@ -73,7 +73,8 @@ const Movie = () => {
           <div className="overlay">
           </div>
         </div>
-        <div className="cstm__container">
+        <div className="cstm__container" id="detail_page_container">
+        <h1>Additional Details</h1>
         <div class="project-content">
           <div class="block-container">
             <div class="block-item">
@@ -117,7 +118,7 @@ const Movie = () => {
                 currentMovieDetail && currentMovieDetail.genres
                 ?
                 currentMovieDetail.genres.map(genre => (
-                  <><span className="movie__genre" id={genre.id}>{genre.name}</span></>
+                  <><li className="movie__genre" id={genre.id}>{genre.name}</li></>
                 ))
                 :
                 ""
@@ -167,17 +168,16 @@ const Movie = () => {
               </div>
             </div>
             <div class="block-item">
-              <div class="content-section">
+              <div class="corp__container">
               {
                 currentMovieDetail && currentMovieDetail.production_companies && currentMovieDetail.production_companies.map(company => (
                   <>
                   {
                     company.logo_path
                     &&
-                    <span className="">
+                    <div className="image__container">
                       <img className="corp_logo" src={"https://image.tmdb.org/t/p/original" + company.logo_path} />
-                      <span>{company.name}</span>
-                    </span>
+                    </div>
                   }
                   </>
                 ))
